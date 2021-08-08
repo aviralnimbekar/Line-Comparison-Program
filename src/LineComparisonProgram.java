@@ -43,8 +43,11 @@ public class LineComparisonProgram {
         if (length1 == length2) {
             System.out.println("Line-1 and Line-2 are equal");
         }
-        else {
-            System.out.println("Line-1 and Line-2 are not equal");
+        else if (length1 < length2) {
+            System.out.println("Line-1 is less than Line-2");
+        }
+        else if (length1 > length2) {
+            System.out.println("Line-1 is greater than Line-2");
         }
     }
 }
